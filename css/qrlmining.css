@@ -183,7 +183,7 @@ cite {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   color: #56347c;
-  background: url("http://localhost/assets/grey1-trans.png") center center no-repeat;
+  background: url("http://qrl.fr1t2.com/assets/grey1-trans.png") center center no-repeat;
 }
 
 .marketing-site-features .marketing-site-features-title {
@@ -239,7 +239,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://localhost/assets/qrlmining-mineshaft.png") center center no-repeat;
+  background: url("http://qrl.fr1t2.com/assets/qrlmining-mineshaft.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -833,7 +833,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://localhost/assets/shaft.png") center center no-repeat;
+  background: url("http://qrl.fr1t2.com/assets/shaft.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -924,7 +924,7 @@ cite {
   text-align: right;
   transition: all 0.25s ease-in;
   width: 45%;
-  background: url("http://localhost/assets/grey-trans.png") center center no-repeat;
+  background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
   background-size: cover;
 }
 
