@@ -159,14 +159,14 @@ cite {
 
 .simple-subscription-form {
   background: transparent;
-  color: #fefefe;
+  color: #d8d8d8;
   padding: 2rem;
   border-radius: 0;
 }
 
 .simple-subscription-form .button {
   margin-bottom: 0;
-  border-radius: 0 0 0 0;
+  border-radius: 4px;
 }
 
 
@@ -183,7 +183,7 @@ cite {
   font-size: 2.25rem;
   margin-bottom: 1rem;
   color: #56347c;
-  background: url("http://qrl.fr1t2.com/assets/grey1-trans.png") center center no-repeat;
+  background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
 }
 
 .marketing-site-features .marketing-site-features-title {
@@ -204,7 +204,7 @@ cite {
 .marketing-site-features-headline {
   text-align: center;
   font-size: 28px;
-  color: white;
+  color: #d8d8d8;
 
 }
 
@@ -220,7 +220,8 @@ cite {
 
 
 .trans{
-  background:rgba(255,255,255,0.125);
+  background:rgba(86,52,124,0.35);
+  border-radius: 6;
 }
 
 
@@ -1004,9 +1005,9 @@ cite {
 
 .input-group-dark-label {
   padding: 0 1rem;
-  border: 1px solid #000000;
-  background: grey;
-  color: #0a0a0a;
+  border: 1px solid #1d2951;
+  background: #d8d8d8;
+  color: #a50b5e;
   text-align: center;
   white-space: nowrap;
   display: -ms-flexbox;
@@ -1022,15 +1023,16 @@ cite {
 
 .input-group-dark-field {
   border-radius: 4;
-  border: 1px solid #000000;
+  border: 1px solid #1d2951;
   -ms-flex: 1 1 0px;
       flex: 1 1 0px;
   height: auto;
   min-width: 0; 
-background: grey;
+background: #d8d8d8;
 }
 
 .input-group-dark-button {
+  border-radius: 4;
   padding-top: 0;
   padding-bottom: 0;
   text-align: center;
@@ -1049,3 +1051,20 @@ background: grey;
     padding-top: 0;
     padding-bottom: 0;
     font-size: 1rem; }
+
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+  color: #a50b5e; }
+
+input::-moz-placeholder,
+textarea::-moz-placeholder {
+  color: #a50b5e; }
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+  color: #a50b5e; }
+
+input::placeholder,
+textarea::placeholder {
+  color: #a50b5e; }
