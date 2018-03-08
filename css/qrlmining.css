@@ -86,7 +86,7 @@ cite {
   .top-bar input {
     max-width: 200px;
     margin-right: 1rem; }
-  .top-bar .input-group-field {
+  .top-bar .input-group-dark-field {
     width: 100%;
     margin-right: 0; }
   .top-bar input.button {
@@ -158,7 +158,7 @@ cite {
 
 
 .simple-subscription-form {
-  background: #0c3e5f;
+  background: transparent;
   color: #fefefe;
   padding: 2rem;
   border-radius: 0;
@@ -173,9 +173,55 @@ cite {
 
 
 
+.marketing-site-features {
+  text-align: center;
+  padding: 2.25rem 0;
+  color: white;
+}
+
+.marketing-site-features .fa {
+  font-size: 2.25rem;
+  margin-bottom: 1rem;
+  color: #56347c;
+  background: url("http://localhost/assets/grey1-trans.png") center center no-repeat;
+}
+
+.marketing-site-features .marketing-site-features-title {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+  color: white;
+
+}
+
+@media screen and (min-width: 40em) {
+  .marketing-site-features {
+    text-align: left;
+    color: #eaa221;
+
+  }
+}
+
+.marketing-site-features-headline {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+
+}
+
+.marketing-site-features-subheadline {
+  margin-bottom: 2rem;
+  text-align: center;
+  color: #eaa221;
+
+}
 
 
 
+
+
+.trans{
+  background:rgba(255,255,255,0.125);
+}
 
 
 
@@ -193,7 +239,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://qrl.fr1t2.com/assets/qrlmining-mineshaft.png") center center no-repeat;
+  background: url("http://localhost/assets/qrlmining-mineshaft.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -434,7 +480,7 @@ cite {
   }
 }
 
-#engadget-footer-social-container #engadget-footer-social .footer-left .input-group-field {
+#engadget-footer-social-container #engadget-footer-social .footer-left .input-group-dark-field {
   background: #6c6f5e;
 }
 
@@ -787,7 +833,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://qrl.fr1t2.com/assets/shaft.png") center center no-repeat;
+  background: url("http://localhost/assets/shaft.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -878,8 +924,7 @@ cite {
   text-align: right;
   transition: all 0.25s ease-in;
   width: 45%;
-  background: transparent;
-  background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
+  background: url("http://localhost/assets/grey-trans.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -935,3 +980,72 @@ cite {
   }
 }
 
+
+
+
+.input-group-dark {
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  margin-bottom: 1rem;
+  -ms-flex-align: stretch;
+      align-items: stretch; }
+  .input-group-dark > :first-child {
+    border-radius: 5px 0 0 5px; }
+  .input-group-dark > :last-child > * {
+    border-radius: 0 5px 5px 0; }
+
+.input-group-dark-label, .input-group-dark-field, .input-group-dark-button, .input-group-dark-button a,
+.input-group-dark-button input,
+.input-group-dark-button button,
+.input-group-dark-button label {
+  margin: 0;
+  white-space: nowrap; }
+
+.input-group-dark-label {
+  padding: 0 1rem;
+  border: 1px solid #000000;
+  background: grey;
+  color: #0a0a0a;
+  text-align: center;
+  white-space: nowrap;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto;
+  -ms-flex-align: center;
+      align-items: center; }
+  .input-group-dark-label:first-child {
+    border-right: 0; }
+  .input-group-dark-label:last-child {
+    border-left: 0; }
+
+.input-group-dark-field {
+  border-radius: 4;
+  border: 1px solid #000000;
+  -ms-flex: 1 1 0px;
+      flex: 1 1 0px;
+  height: auto;
+  min-width: 0; 
+background: grey;
+}
+
+.input-group-dark-button {
+  padding-top: 0;
+  padding-bottom: 0;
+  text-align: center;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex: 0 0 auto;
+      flex: 0 0 auto; }
+  .input-group-dark-button a,
+  .input-group-dark-button input,
+  .input-group-dark-button button,
+  .input-group-dark-button label {
+    height: auto;
+    -ms-flex-item-align: stretch;
+        -ms-grid-row-align: stretch;
+        align-self: stretch;
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 1rem; }
