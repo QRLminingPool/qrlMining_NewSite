@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #fefefe;
+  background: #d8d8d8;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -135,6 +135,8 @@ cite {
 
 
 
+
+
 .hero-full-screen {
   height: 100vh;
   display: -webkit-flex;
@@ -155,7 +157,7 @@ cite {
 
 .hero-full-screen .middle-content-section {
   text-align: center;
-  color: #fefefe;
+  color: #d8d8d8;
 }
 
 .hero-full-screen .top-content-section {
@@ -169,7 +171,7 @@ cite {
 .hero-full-screen .bottom-content-section svg {
   height: 3.75rem;
   width: 3.75rem;
-  fill: #56347c;
+  fill: #eaa221;
 }
 
 .hero-full-screen .top-bar {
@@ -181,7 +183,7 @@ cite {
 }
 
 .hero-full-screen .top-bar .menu-text {
-  color: #fefefe;
+  color: #d8d8d8;
 }
 
 .hero-full-screen .top-bar .menu li {
@@ -194,7 +196,7 @@ cite {
 }
 
 .hero-full-screen .top-bar .menu a {
-  color: #fefefe;
+  color: #d8d8d8;
   font-weight: bold;
 }
 
@@ -220,6 +222,22 @@ cite {
   background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
 }
 
+.grey-trans {
+    background:rgba(77,77,77,0.45);
+}
+
+.blue-trans {
+    background:rgba(29,41,81,0.45);
+}
+
+
+.grey-trans h4 {
+  color: #eaa221;
+  font-weight: bold;
+}
+.grey-trans a, .grey-trans p {
+  color: #d8d8d8;
+}
 
 .timeline .timeline-item::after, .timeline .timeline-item::before {
   clear: both;
@@ -255,13 +273,23 @@ cite {
 }
 
 .timeline a {
-  color: #fefefe;
+  color: #d8d8d8;
   font-weight: bold;
   transition: all 0.25s ease-in;
 }
 
+.timeline ul {
+  color: #d8d8d8;
+  font-weight: bold;
+  transition: all 0.25s ease-in;
+}
+.timeline li {
+  color: #d8d8d8;
+  transition: all 0.25s ease-in;
+}
+
 .timeline a:hover {
-  box-shadow: 0 1px 0px 0px #fefefe;
+  box-shadow: 0 1px 0px 0px #d8d8d8;
   transition: all 0.25s ease-in;
 }
 
@@ -459,10 +487,10 @@ textarea::placeholder {
 
 .sticky-social-bar .social-icon {
   list-style-type: none;
-  color: #fefefe;
+  color: #d8d8d8;
   background-color: inherit;
   margin: 0;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.4s ease-in-out;
   cursor: pointer;
   font-size: 1.1rem;
   padding: 0.25rem 0.25rem 0.5rem;
@@ -529,7 +557,7 @@ textarea::placeholder {
 
 .sticky-social-bar .social-icon > a > .social-icon-text {
   font-size: 90%;
-  color: #fefefe;
+  color: #d8d8d8;
   text-transform: uppercase;
   margin-right: 0.5rem;
 }
@@ -544,4 +572,6 @@ textarea::placeholder {
   color: inherit;
   background-color: inherit;
 }
+
+
 

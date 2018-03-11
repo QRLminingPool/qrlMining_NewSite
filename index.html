@@ -46,8 +46,28 @@
     </div>
   </div>
   <div class="bottom-content-section" data-magellan data-threshold="0">
-    <a href="#main-content-section"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"></path></svg></a>
+    <a href="#main-content-section">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M24 12c0-6.627-5.373-12-12-12s-12 5.373-12 12 5.373 12 12 12 12-5.373 12-12zm-18.005-1.568l1.415-1.414 4.59 4.574 4.579-4.574 1.416 1.414-5.995 5.988-6.005-5.988z"></path></svg>
+    </a>
+
   </div>
+          <script type="text/javascript">
+baseUrl = "https://widgets.cryptocompare.com/";
+var scripts = document.getElementsByTagName("script");
+var embedder = scripts[ scripts.length - 1 ];
+var cccTheme = {"General":{"background":"#000000","float":"left"},"BigPrice":{"color":"#eaa221","symbolColor":"#56347c"},"SmallPrice":{"color":"eaa221","symbolColor":"#56347c"},"Chart":{"labelBackground":"#1d2951","labelColor":"#eaa221","animation":true,"fillColor":"rgba(86,52,124,.23)","borderColor":"#a50b5e"}};
+(function (){
+var appName = encodeURIComponent(window.location.hostname);
+if(appName==""){appName="local";}
+var s = document.createElement("script");
+s.type = "text/javascript";
+s.async = true;
+var theUrl = baseUrl+'serve/v1/coin/header?fsym=QRL&tsyms=USD,EUR,BTC,KRW';
+s.src = theUrl + ( theUrl.indexOf("?") >= 0 ? "&" : "?") + "app=" + appName;
+embedder.parentNode.appendChild(s);
+})();
+</script>
+
 </div>
 <!-- end hero full screen -->
 
@@ -55,91 +75,113 @@
   <div id="main-content-section" data-magellan-target="main-content-section">
   <!-- your content goes here -->
     <div class="grid-x grid-padding-x">
-      <div class="large-6 cell" >
-        <div class="marketing-site-features" data-equalizer>
-          <h2 class="marketing-site-features-headline">Why Mine On QRLmining?</h2>
-          <p class="marketing-site-features-subheadline subheader">We stand out from the rest, and here's why!</p>
-          <div class="grid-x grid-padding-x">
-            <div class="medium-12 large-4 cell" >
-              <div class="pink-trans" data-equalizer-watch>
-                <i class="fa fi-bitcoin" aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">First Pool Featuring QRL</h4>
-                <p class="marketing-site-features-desc"> While there are ample choices when it comes to pools, this is the <strong>FIRST</strong> QRL pool on the market. We have been mining QRL as a pool since QRL beta-net v0.61.2 FIXME with correct version and date</p>
+<!-- TimeLine -->
+      <div class="small-10 small-offset-1 cell">
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <img src="" class="" height="22" width="22" alt="">
+            </div>
+            <div class="timeline-content right">
+              <p class="timeline-content-date">What Is QRL Mining <span class="timeline-content-month"></span></p>
+              <p>The QRL Mining Pool is a Stratum server mining on the QRL blockchain. QRL uses the Cryptonight mining algorithm to preform hashing functions. This pool combines workers together to allow a greater chance at winning a block</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-icon">
+              <img src="" class="" height="22" width="22" alt="">
+            </div>
+            <div class="timeline-content">
+              <p class="timeline-content-date">QRL (Quantum Resistant Ledger): <span class="timeline-content-month"></span></p>
+              <ul class="no-bullet">
+                <li>Coin Symbol: <strong>QRL</strong></li>
+                <li>Website: <a href="https://theqrl.org/" target="_blank">https://theqrl.org/</a></li>
+                <li>Block Explorer: <a href="https://explorer.theqrl.org" target="_blank">Explorer.theQRL.org</a></li>
+                <li> <a href="https://wallet.theqrl.org" target="_blank">QRL Wallet</a></li>
+                <li>GitHub: <a href="https://github.com/theQRL" target="_blank">TheQRL</a></li>
+                <li>Chat: <a href="https://discord.gg/RcR9WzX" target="_blank">Discord</a></li>
+                <li>Announcment: <a href="https://bitcointalk.org/index.php?topic=1730273.0" target="_blank">Bitcoin Talk</a></li>
+              </ul>
+              
+            </div>
+          
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="" class="" height="22" width="22" alt="">
+              </div>
+              <div class="timeline-content right">
+                <p class="timeline-content-date">2018 - <span class="timeline-content-month">February</span></p>
+                <p>The QRLmining team was established and built from relationships forged from the mutual interest in cryptocurrency and the knowledge of the present Quantum Computing attack. We started building the pool and related services to help strengthen the QRL network and support the project.</p>
               </div>
             </div>
-            <div class="medium-12 large-4 cell" >
-              <div class="pink-trans" data-equalizer-watch>
-                <i class="fa fi-burst-new" aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">Community Developed </h4>
-                <p class="marketing-site-features-desc"> Founded on community involvement, we believe that we are stronger as a group. The development of this pool comes from the involvement of the community.</p>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="" class="" height="22" width="22" alt="">
+              </div>
+              <div class="timeline-content">
+                <p class="timeline-content-date">2018 - <span class="timeline-content-month">March</span></p>
+                <p>QRL Mining will launch the beta-net mining pool and begin testing the QRL blockchain against a massive hashrate. With the opening of GPU mining capabilities via Pools the available hashrate will more than triple. This pool aims to provide small miners a way to make a profit.</p>
               </div>
             </div>
-            <div class="medium-12 large-4 cell" >
-              <div class="pink-trans" data-equalizer-watch>
-                <i class="fa fi-graph-pie" aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">Full Development Team</h4>
-                <p class="marketing-site-features-desc"> QRL Mining has a proven group of developers working around the clock to provide a fully supported and functioning mining pool.</p>
+
+            <div class="timeline-item">
+              <div class="timeline-icon">
+                <img src="" class="" height="22" width="22" alt="">
+              </div>
+              <div class="timeline-content right">
+                <p class="timeline-content-date">2018 - <span class="timeline-content-month">Q3</span></p>
+                <p>The QRL project has planned a hard fork Mid Q3 2018 from a Proof Of Work system to a Proof Of Stake system. This will completely change the way QRL is created and rewarded to the creators. We will move towards other CryptoNight coins to continue gaining from our mining rigs. We will payout all remaining mining rewards on the hard fork date TBD.</p>
               </div>
             </div>
           </div>
         </div>
+        <!-- end timeline -->
       </div>
-      <div class="large-6 cell">
-        <div class="timeline">
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <img src="" class="" height="22" width="22" alt="">
-            </div>
-            <div class="timeline-content right">
-              <p class="timeline-content-date">2009 - <span class="timeline-content-month">January</span></p>
-              <p>Satoshi said "Let There Be Bitcoin"</p>
-              <p>The start of a new digital movement, Bitcoin was born. This single moment has shaped the very nature of our world. Decentralized currency and the movement that has followed is nothing short of amazing and is still considered a monumental event in our history.</p>
-            </div>
+    </div>
+    <div class="marketing-site-features grey-trans" data-equalizer>
+      <h2 class="marketing-site-features-headline">QRL Mining Pool Features</h2>
+      <p class="marketing-site-features-subheadline subheader"></p>
+      <div class="grid-x grid-padding-x">
+        <div class="small-12 medium-6 large-3 cell" data-equalizer-watch>
+          <i class="fa fi-bitcoin" aria-hidden="true"></i>
+          <h4 class="marketing-site-features-title">First Pool Featuring QRL</h4>
+          <p class="marketing-site-features-desc"> While there are ample choices when it comes to pools, this is the <strong>FIRST</strong> QRL pool on the market. We have been mining QRL as a pool since QRL beta-net v0.61.2 FIXME with correct version and date</p>
+        </div>
+
+          <div class="small-12 medium-6 large-3 cell" data-equalizer-watch>
+            <i class="fa fi-burst-new" aria-hidden="true"></i>
+            <h4 class="marketing-site-features-title">Community Developed </h4>
+            <p class="marketing-site-features-desc"> Founded on community involvement, we believe that we are stronger as a group. The development of this pool comes from the involvement of the community.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <img src="" class="" height="22" width="22" alt="">
-            </div>
-            <div class="timeline-content">
-              <p class="timeline-content-date">2017 <span class="timeline-content-month">November</span></p>
-              <p>QRL changed direction from a Proof of Stake model to a Proof of Work mineable algorithm, Cryptonight opening up th possibility for the QRLmining Pool to be created</p>
-            </div>
+        
+          <div class="small-12 medium-6 large-3 cell" data-equalizer-watch>
+            <i class="fa fi-graph-pie" aria-hidden="true"></i>
+            <h4 class="marketing-site-features-title">Full Multi-Discilinary Team</h4>
+            <p class="marketing-site-features-desc"> QRL Mining has a proven group of developers working around the clock to provide a fully supported and functioning mining pool.</p>
           </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <img src="" class="" height="22" width="22" alt="">
-            </div>
-            <div class="timeline-content right">
-              <p class="timeline-content-date">2018 - <span class="timeline-content-month">February</span></p>
-              <p>The QRLmining team was established and built from relationships forged from the mutual interest in cryptocurrency and the knowledge of the present Quantum Computing attack. We started building the pool and related services to help strengthen the QRL network and support the project.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <img src="" class="" height="22" width="22" alt="">
-            </div>
-            <div class="timeline-content">
-              <p class="timeline-content-date">2018 - <span class="timeline-content-month">March</span></p>
-              <p>QRL Mining will launch the beta-net mining pool and begin testing the QRL blockchain against a massive hashrate. With the opening of GPU mining capabilities via Pools the available hashrate will more than triple. This pool aims to provide small miners a way to make a profit.</p>
-            </div>
-          </div>
-          <div class="timeline-item">
-            <div class="timeline-icon">
-              <img src="" class="" height="22" width="22" alt="">
-            </div>
-            <div class="timeline-content right">
-              <p class="timeline-content-date">2018 - <span class="timeline-content-month">Q3</span></p>
-              <p>The QRL project has planned a hard fork Mid Q3 2018 from a Proof Of Work system to a Proof Of Stake system. This will completely change the way QRL is created and rewarded to the creators. We will move towards other CryptoNight coins to continue gaining from our mining rigs. We will payout all remaining mining rewards on the hard fork date TBD.</p>
-            </div>
+        
+          <div class="small-12 medium-6 large-3 cell" data-equalizer-watch>
+            <i class="fa fi-bitcoin" aria-hidden="true"></i>
+            <h4 class="marketing-site-features-title">Talk About Hardware here</h4>
+            <p class="marketing-site-features-desc"> Yadda Yadda Yadda</p>
           </div>
         </div>
       </div>
     </div>
-  </div>
 </div>
 
 <!-- Sticky Social Bar -->
-<ul class="sticky-social-bar show-for-medium">
+<ul class="sticky-social-bar">
+    <li class="social-icon">
+    <a href="#">
+    <i class="fa fi-social-discord" aria-hidden="true"><img src="assets/icons/discord-white.png" class="fa"></i>
+    <span class="social-icon-text">Discord</span>
+    </a>
+  </li> 
+<!--
   <li class="social-icon">
     <a href="#">
       <i class="fa fi-social-twitter" aria-hidden="true"></i>
@@ -149,25 +191,16 @@
   <li class="social-icon">
     <a href="#">
       <i class="fa fi-social-medium" aria-hidden="true"></i>
-      <span class="social-icon-text">Pinterest</span>
+      <span class="social-icon-text">Medium</span>
     </a>
-  </li> 
+  </li>  -->
   <li class="social-icon">
     <a href="#">
       <i class="fa fi-social-reddit" aria-hidden="true"></i>
       <span class="social-icon-text">Reddit</span>
     </a>
-  </li>
-    <li class="social-icon">
-    <a href="#">
-    
-    <i class="fa fi-social-discord" aria-hidden="true"><img src="assets/icons/discord-white.png" class="fa" height="" width="" alt=""></i>
-    <span class="social-icon-text">Discord</span>
-    </a>
-  </li> 
+
 </ul>
-
-
 
 
 
