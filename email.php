@@ -10,7 +10,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $emailErr = "Duh You need an Email";
 
 // exit the script back home
-    header("Location: fuck.com");
+    header("Location: index.html");
 	exit;
   } else {
 
