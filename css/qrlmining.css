@@ -213,13 +213,13 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://qrl.fr1t2.com/assets/shaft.png") center center no-repeat;
+  background: url("assets/shaft.png") center center no-repeat;
   background-size: cover;
 }
 
 
 .dark-trans {
-  background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
+  background: url("assets/grey-trans.png") center center no-repeat;
 }
 
 .grey-trans {
@@ -326,7 +326,7 @@ cite {
   text-align: right;
   transition: all 0.25s ease-in;
   width: 45%;
-  background: url("http://qrl.fr1t2.com/assets/grey-trans.png") center center no-repeat;
+  background: url("assets/grey-trans.png") center center no-repeat;
 }
 
 .timeline .timeline-item .timeline-content p {
