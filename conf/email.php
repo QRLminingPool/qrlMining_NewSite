@@ -2,7 +2,6 @@
 // define variables and set to empty values
 $emailErr = "";
 $email = "";
-$home=$_SERVER['HOME']
 function test_input($data)
 {
    $data = trim($data);
@@ -16,10 +15,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $email = test_input($_POST['email']);
   }
 // set var to pass email to script, You have to change the directory
-$output = shell_exec('bash {$home}/.mail/emQRLminingList.sh {$email}');
+$output = shell_exec('bash /home/ubuntu/.mail/emQRLminingList.sh {$email}');
 // Fire the script
 $output;
-}
 header("Location: /index.html");
 exit;
+}
 ?>

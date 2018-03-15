@@ -2,8 +2,6 @@
 // define variables and set to empty values
 $emailErr = "";
 $email = "";
-$home=$_SERVER['HOME']
-
 function test_input($data)
 {
    $data = trim($data);
@@ -18,7 +16,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
   }
 // set var to pass email to script, 
 // You have to change the directory and make it apache2 owned
-$output = shell_exec('bash /home/fr1t2/.mail/rmQRLminingList.sh {$email}');
+$output = shell_exec('bash /home/ubuntu/.mail/rmQRLminingList.sh {$email}');
 // Fire the script
 $output;
 }

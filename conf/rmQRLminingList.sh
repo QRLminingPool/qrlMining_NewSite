@@ -6,7 +6,7 @@ message=("You have been removed. ByeBye"
 # replace the API key with your valid API from mailgun
 )
 validateEmail(){
-curl -G --user 'api:key-{NUMBERS HERE}' \
+curl -G --user 'api:{NUMBERS HERE}' \
 -G https://api.mailgun.net/v3/mg.qrlmining.com/validate \
 --data-urlencode address='$email'
 }
@@ -21,7 +21,7 @@ curl -G --user 'api:key-{NUMBERS HERE}' \
 #}
 remList(){
 # replace the API key with your valid API from mailgun
-curl -s --user 'api:key-{NUMBERS HERE}' -X DELETE \
+curl -s --user 'api:{NUMBERS HERE}' -X DELETE \
     https://api.mailgun.net/v3/lists/qrlmining@mg.qrlmining.com/members/$email
 }
 # validating email address
