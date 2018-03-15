@@ -8,10 +8,7 @@ Please build in a branch and merge any working features to master.
 ## To-Do list
 
 ##### Site -
-- [ ] Get icons working for site
 - [ ] Fill Content
-- [ ] Footer links
-- [ ] 
 
 ##### Server
 - [ ] Get ReactJS working
@@ -28,9 +25,12 @@ Please build in a branch and merge any working features to master.
 - [ ] ...
 
 
+## WebSite Setup
+
+There is a conf file in the webserver root. you will find configuration files there.
 
 
-## Pool Configuration
+## Pool Configuration Instructions for QRL
 
 ## Dependencies
 ```bash
@@ -97,6 +97,31 @@ sudo ufw enable
 # Check UFW
 sudo ufw status
 ```
+
+#### Install Redis properly
+
+Create a directory where to store your Redis config files and your data:
+
+```bash
+sudo mkdir /etc/redis
+sudo mkdir /var/redis
+```
+
+Copy the init script
+
+```bash
+sudo cp utils/redis_init_script /etc/init.d/redis_6379
+```
+
+Edit the script
+
+```bash
+sudo nano /etc/init.d/redis_6379
+```
+Make sure to modify REDISPORT accordingly to the port you are using. Both the pid file path and the configuration file name depend on the port number.
+
+
+
 
 
 ## Pool Config
