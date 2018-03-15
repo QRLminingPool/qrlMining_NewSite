@@ -151,7 +151,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("http://qrl.fr1t2.com/assets/qrlmining-mineshaft.png") center center no-repeat;
+  background: url("assets/qrlmining-mineshaft.png") center center no-repeat;
   background-size: cover;
 }
 
