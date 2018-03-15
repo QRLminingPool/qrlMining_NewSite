@@ -151,7 +151,7 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("assets/qrlmining-mineshaft.png") center center no-repeat;
+  background: url("/assets/qrlmining-mineshaft.png") center center no-repeat;
   background-size: cover;
 }
 
@@ -213,13 +213,13 @@ cite {
   -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background: url("assets/shaft.png") center center no-repeat;
+  background: url("/assets/shaft.png") center center no-repeat;
   background-size: cover;
 }
 
 
 .dark-trans {
-  background: url("assets/grey-trans.png") center center no-repeat;
+  background: url("/assets/grey-trans.png") center center no-repeat;
 }
 
 .grey-trans {
