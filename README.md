@@ -15,7 +15,7 @@ Please build in a branch and merge any working features to master.
 - [ ] Setup site to use react-foundation
 - [ ] Get API info scraping and storage setup
 	- [ ] List of API's we are going to scrape
-	- [ ] Feed ingo D3 or similar and make graphs and pretty things
+	- [ ] Feed into D3 or similar and make graphs and pretty things
 - [ ] Move into production env. harden and secure server
 
 ##### Hosting and analytics
@@ -24,11 +24,36 @@ Please build in a branch and merge any working features to master.
 - [ ] Edit DNS settings to point to production server
 - [ ] ...
 
+* * *
 
 ## WebSite Setup
 
-There is a conf file in the webserver root. you will find configuration files there.
+There is a conf file in the web server root. you will find configuration files there.
 
+### Move Conf files
+Create a folder in your home directory called .email and set the owner to apache2 user
+
+`mkdir ~/.home/.email`
+
+Now copy the files into this directory
+* emQRLminingList.sh
+* rmQRLminingList.sh
+* Welcome.html
+	*This is where the pretty email lives. 
+
+Then set permissions in the folder
+
+`sudo chown www-data:www-data ~/home/.mail -R`
+
+
+Now set the variables accordingly.
+
+We need to assign our mailGun API-key to each command in emQRLminingList and rmQRLminingList.sh
+
+We also need to update the PHP script to where our folder lives. Username...
+
+
+* * *
 
 ## Pool Configuration Instructions for QRL
 
