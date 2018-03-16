@@ -11,7 +11,7 @@ function test_input($data)
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the email var 
-  if (isset($_POST['email'])) {
+    if(!empty($_POST['email'])) {
     $email = test_input($_POST['email']);
     error_log("${email}", 0);
   }
