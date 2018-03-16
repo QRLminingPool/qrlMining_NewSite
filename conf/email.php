@@ -16,7 +16,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     error_log("${email}", 0);
   }
 // set var to pass email to script, You have to change the directory
-$output = shell_exec('bash /home/ubuntu/.mail/emQRLminingList.sh {$email}');
+$email = escapeshellarg($email);
+$output = shell_exec("bash /home/ubuntu/.mail/emQRLminingList.sh $email");
 // Fire the script
 $output;
 header("Location: /index.html");
