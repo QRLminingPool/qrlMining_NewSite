@@ -1,0 +1,21 @@
+Install NodeJS - This is needed as a build and dependency runtime.  Follow the instructions on the website to download.  https://nodejs.org/en/
+
+Run the following command to install commands that help create a react app $ npm install -g create-react-app
+
+Then run the following command to actually create local react app. $create-react-app [your-app]
+
+These are some important commands to control your react app:
+  npm start
+    Starts the development server.
+
+  npm run build
+    Bundles the app into static files for production.
+
+  npm test
+    Starts the test runner.
+
+  npm run eject
+    Removes this tool and copies build dependencies, configuration files
+    and scripts into the app directory. If you do this, you can’t go back!
+
+npm run build
