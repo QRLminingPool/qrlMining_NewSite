@@ -2,6 +2,8 @@ Install NodeJS - This is needed as a build and dependency runtime.  Follow the i
 
 Run the following command to install commands that help create a react app $ npm install -g create-react-app
 
+Run the following command to install a react router (for page linking) $ nmp i react-router-dom
+
 Then run the following command to actually create local react app. $create-react-app [your-app]
 
 These are some important commands to control your react app:

@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import {Link} from 'react-router-dom';
 
 class Header extends Component {
   render() {
@@ -8,12 +9,23 @@ class Header extends Component {
 				<div className="top-bar">
 					<div className="top-bar-left">
 						<ul className="menu">
-							<li><a href="#">Home</a></li>
-							<li><a href="#">Getting Started</a></li>
+							<li>
+							 <Link to="/">Home</Link>
+							</li>
+							<li>
+							 <Link to="/Dashboard">Dashboard</Link>
+							</li>
+							<li>
+							 <Link to="/GettingStarted">Getting Started</Link>
+							</li>
 							<li><a href="#">FAQ</a></li>
-							<li><a href="#">Pool Blocks</a></li>
-							<li><a href="#0">Payments</a></li>
-							<li><a href="pages/Contact.html">Contact Us</a></li>
+							<li>
+							 <Link to="/PoolBlocks">Pool Blocks</Link>
+							</li>
+							<li><Link to="/Payments">Payments</Link></li>
+							<li>
+							 <Link to="/Contact">Contact Us</Link>
+							</li>
 						</ul>
 					</div>
 					<div className="top-bar-right">
