@@ -17,5 +17,12 @@ echo '<div class="simple-subscription-form ">
                 <button class="gold round button" type="submit" >Bye Bye</button>
               </div>
             </form>
-          </div>';
+          </div>
+<div data-closable class="alert-box callout alert">
+  <i class="fa fa-ban"></i> You are going to remove your email from our list. <br>Are you sure?
+<button class="close-button" aria-label="Dismiss alert" type="button" data-close>
+    <span aria-hidden="true">&CircleTimes;</span>
+  </button>
+</div>
+          ';
 ?>          
