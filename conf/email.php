@@ -13,13 +13,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the email var 
     if(!empty($_POST['email'])) {
     $email = test_input($_POST['email']);
-    error_log("${email}", 0);
+    error_log("_POST is set to: ${email}", 0);
+}
+
 // set var to pass email to script, You have to change the directory
 $output = shell_exec('bash /home/ubuntu/.mail/emQRLminingList.sh ${email}');
 // Fire the script
 $output;
-}
-
 header("Location: /index.html");
 exit;
 }
