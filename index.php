@@ -43,25 +43,15 @@
   </div>
         <div class="middle-content-section">
 
-          <div class="simple-subscription-form ">
-            <form  action="conf/email.php" method="post" >
-              <h4 style="color: #eaa228;"><strong>Join The Mailing List</strong></h4>
-              <div class="input-group-dark">
-                <span class="input-group-dark-label">
-                  <i class="fi-mail"></i>
-                </span>
-                <input class="input-group-dark-field" 
-                type="email" 
-                placeholder="Email@Address" 
-                name="email" 
-                required>
-                <button class="gold round button" type="submit" >Sign Up</button>
-              </div>
-            </form>
-          </div>
 <?php 
+if( isset($_GET['unsubscribe']) ) { 
+  include('php/unsubscribe.php'); 
+} else {
+    include('php/signup.php');
+}
 if( isset($_GET['sent']) && isset($_GET['email']) ) { include('conf/thanks.php'); } 
-if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.php'); } ?>
+if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.php'); } 
+?>
 
         </div>
         <div class="grid-x grid-padding-x">
