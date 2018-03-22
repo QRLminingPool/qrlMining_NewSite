@@ -1,5 +1,6 @@
 <?php
   
+print_r($_POST);
 
 if( $_POST["email"])
 {
