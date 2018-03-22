@@ -1,8 +1,8 @@
-var api = "http://mineqrl.com:8117";
+var api = "http://pool.qrlmining.com:8117";
 
 var coinUnits = 1000000000;
 
-var poolHost = "pool.qrlmining.com.com";
+var poolHost = "pool.qrlmining.com";
 
 var irc = "irc.freenode.net/#qrl-pools";
 
