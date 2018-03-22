@@ -20,7 +20,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 $output = shell_exec("bash /home/ubuntu/.mail/emQRLminingList.sh '".$email."'");
 // Fire the script
 $output;
-header("Location: /index.html");
+echo "your post should look like: '".$email."'";
+//header("Location: /index.html");
 exit;
 }
 ?>
