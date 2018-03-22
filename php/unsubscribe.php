@@ -19,7 +19,7 @@ echo '<div class="simple-subscription-form ">
             </form>
           </div>
 <div data-closable class="alert-box callout alert">
-  <i class="fa fa-ban"></i> You are going to remove your email from our list. <br>Are you sure?
+  <i class="fa fi-alert"></i> You are going to remove your email from our list. <br>Are you sure?
 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&CircleTimes;</span>
   </button>
