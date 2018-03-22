@@ -60,10 +60,9 @@
             </form>
           </div>
 <?php 
-if( isset($_GET['sent']) && isset($_GET['email']) ) { include('conf/thanks.php'); } ?>
-
-<?php 
+if( isset($_GET['sent']) && isset($_GET['email']) ) { include('conf/thanks.php'); } 
 if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.php'); } ?>
+
         </div>
         <div class="grid-x grid-padding-x">
           <div class="small-12 cell">
