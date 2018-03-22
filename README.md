@@ -39,7 +39,7 @@ Now copy the files into this directory
 * emQRLminingList.sh
 * rmQRLminingList.sh
 * Welcome.html
-	*This is where the pretty email lives. 
+	\*This is where the pretty email lives. 
 
 Then set permissions in the folder
 

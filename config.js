@@ -1,4 +1,4 @@
-var api = "http://pool.qrlmining.com.com:8117";
+var api = "http://mineqrl.com:8117";
 
 var coinUnits = 1000000000;
 
