@@ -28,30 +28,99 @@ Please build in a branch and merge any working features to master.
 
 ## WebSite Setup
 
-There is a conf file in the web server root. you will find configuration files there.
+There is a conf folder in the web server root. you will find configuration files there.
+
+To setup the email server mailing list you will need to move files into the correct places, give the correct permissions and add your keys from mailgun.
+
+This guide is using a LAMP server, apache2 MYSql and PHP to run the site. YMMV with other web servers.
+
+
+### Site overview
+
+Main page has an email signup form that signs up a user with a mailgun mailing list.
 
 ### Move Conf files
-Create a folder in your home directory called .email and set the owner to apache2 user
+Create a folder in your home directory called .mail and set the owner to apache2 user
 
-`mkdir ~/.home/.email`
+`mkdir ~/.home/.mail`
 
 Now copy the files into this directory
 * emQRLminingList.sh
 * rmQRLminingList.sh
 * Welcome.html
-	*This is where the pretty email lives. 
+	\*This is where the pretty email lives. 
 
 Then set permissions in the folder
 
 `sudo chown www-data:www-data ~/home/.mail -R`
 
+### Edit the conf files
 
-Now set the variables accordingly.
 
-We need to assign our mailGun API-key to each command in emQRLminingList and rmQRLminingList.sh
+#### API Key
+Set the variables accordingly. We need to assign our mailGun API-key to each command in emQRLminingList and rmQRLminingList.sh
 
+`nano ~/.mail/emQRLminingList`
+
+Add API key in the format of 
+`api:key-9dj7shci7iuew78489jw9e8c8dvjw89 # random key shown`
+
+Do the same for the rmQRL script. This will remove any email from the list.
+
+`nano ~/.mail/rmQRLminingList`
+
+#### Mailing list setup
+In the rmQRL and emQRL files you can change the cURL call to mailgun with a new mailing list. This is one we setup.
+
+Inside the `addList(){}` variable you will find the call to mailgun and the mailing list. Replace with the correct list.
+
+#### PHP script edits
 We also need to update the PHP script to where our folder lives. Username...
 
+`nano conf/email.php`
+
+change the `$output = shell_exec("bash /home/ubuntu/.mail/emQRLminingList.sh '".$email."'");` line to ft your enviornment.
+
+Do the same for the unsubscribe script.
+
+`nano conf/unsubscribe.php`
+
+
+
+#### Welcome Email.
+The welcome email is generated using [Foundation for email](https://foundation.zurb.com/emails/docs/). This is ran through the Inlining processor and it spits out inline css imbedded html for the email. 
+This email is located in the `~/.mail` directory and can be reworked to whatever message you would like to send.
+
+The call for the location of the email is found in the `~/.mail/emQRLminingList.sh` varriable `html=$(cat Welcome.html)`
+
+Simply change the location that `cat` is reading from. Make sure it is alid html and be sure to test on your personal email before sending.
+
+
+### Apache2 setup
+
+We need to allow PHP files to be served by default.
+
+`sudo nano /etc/apache2/mods-enabled/dir.conf`
+
+Change the following:
+```bash
+<IfModule mod_dir.c>
+    DirectoryIndex index.html index.cgi index.pl index.php index.xhtml index.htm
+</IfModule>
+```
+to
+```
+<IfModule mod_dir.c>
+    DirectoryIndex index.php index.html index.cgi index.pl  index.xhtml index.htm
+</IfModule>
+```
+
+
+Restart apache2
+
+`sudo systemctl restart apache2`
+
+If everything worked you can now add email to your mailing list and get a pretty responce back.
 
 * * *
 

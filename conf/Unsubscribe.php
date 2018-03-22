@@ -11,15 +11,15 @@ function test_input($data)
 }
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Set the email var 
-  if (isset($_POST['email'])) {
+    if(!empty($_POST['email'])) {
     $email = test_input($_POST['email']);
-  }
-// set var to pass email to script, 
-// You have to change the directory and make it apache2 owned
-$output = shell_exec('bash /home/ubuntu/.mail/rmQRLminingList.sh {$email}');
+    error_log("Unsubscribed: ${email}", 0);
+// set var to pass email to script, You have to change the directory
+$output = shell_exec("bash /home/ubuntu/.mail/rmQRLminingList.sh '".$email."'");
 // Fire the script
 $output;
 }
-header("Location: /unsubscribe.html");
+header("Location: /index.php?removed=Yes&email=${email}&unsubscribed=Yes");
 exit;
+}
 ?>
