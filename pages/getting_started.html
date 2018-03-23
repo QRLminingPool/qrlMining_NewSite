@@ -64,11 +64,11 @@
 
 <hr>
 
-<h3>For <i class="fa fa-windows"></i> Windows users new to mining</h3>
+<h3>For <i class="fa fa-windows"></i> Windows Users New to Mining</h3>
 <p class="getting_started_windows">
     You can <a class="btn btn-default btn-sm" target="_blank" id="easyminer_link"><i class="fa fa-download"></i> Download</a>
-    and run <a target="_blank" href="https://github.com/zone117x/cryptonote-easy-miner">cryptonote-easy-miner</a> <i class="fa fa-github"></i>
-    which will automatically generate your wallet address and run CPUMiner with the proper parameters.
+    and run <a target="_blank" href="https://github.com/fireice-uk/xmr-stak/releases">XMR-stak</a> <i class="fa fa-github"></i>
+    which will allow you to mine with both CPU and GPU (supporting AMD and Nvidia).
 </p>
 
 <hr>
@@ -76,8 +76,12 @@
 <h3>Wallet & Daemon Software</h3>
 <p>
     <ul>
-        <li><a target="_blank" href="http://monero.cc/getting-started/">Getting started with Monero</a></li>
-        <li>Monero information and news on its <a href="https://bitcointalk.org/index.php?topic=583449.0">BitcoinTalk announcement thread</a></li>
+        <li>
+			<a target="_blank" href="https://qrl.co.in/">Getting started with QRL</a> 
+			<br>
+			This site contains step by step instructions on how to begin mining QRL in your chosen OS. Focus specifically on the "Setup Wallet" section. 
+		</li>
+        <li>QRL information and news on the <a href="https://theqrl.org/"> QRL Website</a></li>
     </ul>
 </p>
 
@@ -96,6 +100,44 @@
         </tr>
         </thead>
         <tbody id="mining_apps">
+		<tr>
+            <td class="miningAppTitle">XMR-stak</td>
+            <td>CPU, GPU (Nvidia and AMD)</td>
+            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak/releases">Github</a></td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=2126975.0">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://github.com/fireice-uk/xmr-stak">Github</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span>Example:</span>
+                <code>minerd -a cryptonight -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+            </td>
+        </tr>
+		<tr>
+            <td class="miningAppTitle">Cast XMR</td>
+            <td>GPU (Nvidia and AMD)</td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=2256917.0">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=2256917.0">BitcoinTalk</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span>Example:</span>
+                <code>minerd -a cryptonight -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+            </td>
+        </tr>
+		<tr>
+            <td class="miningAppTitle">CPUMiner (forked by LucasJones & Wolf)</td>
+            <td>CPU</td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=632724">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://bitcointalk.org/index.php?topic=632724">BitcoinTalk</a></td>
+            <td><a target="_blank" href="https://github.com/wolf9466/cpuminer-multi">Github</a></td>
+        </tr>
+        <tr>
+            <td colspan="5">
+                <span>Example:</span>
+                <code>minerd -a cryptonight -o stratum+tcp://<span class="exampleHost"></span>:<span class="examplePort"></span> -u <span class="exampleAddress">YOUR_WALLET_ADDRESS</span> -p x</code>
+            </td>
+        </tr>
         <tr>
             <td class="miningAppTitle">CPUMiner (forked by LucasJones & Wolf)</td>
             <td>CPU</td>
