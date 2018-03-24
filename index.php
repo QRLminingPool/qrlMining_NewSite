@@ -24,7 +24,7 @@
         <ul class="menu">
          <!-- <li class="menu-text"><img src="" alt=""></li> -->
           <li><a href="index.html">Home</a></li>
-          <li><a href="pool.html">pool</a></li>
+          <li><a href="pool.html">Pool</a></li>
 
           <!-- comming soon 
           <li><a href="#">Getting Started</a></li>
@@ -120,7 +120,7 @@ if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.ph
                       <img src="" class="" height="22" width="22" alt="">
                     </div>
                     <div class="timeline-content right">
-                      <p class="timeline-content-date">2018 - <span class="timeline-content-month">February</span></p>
+                      <p class="timeline-content-date"><span class="timeline-content-month"></span></p>
                       <p class="timeline-content-date">Why should I use a pool? <span class="timeline-content-month"></span></p>
                       <p>Mining is becoming more and more popular by the day and new people are joining everyday.  More importantly, large scale mining enterprises are entering the network with massive hashing power.  This ensures that single miners will very rarely (if ever) win a block.  A mining pool lets smaller miners band together to share their hashrate.  In this way, the pool can win blocks against the big miners and distribute to the pool members based upon their given power.</p>
                     </div>
