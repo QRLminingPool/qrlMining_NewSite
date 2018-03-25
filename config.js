@@ -6,7 +6,7 @@ var poolHost = "strat.qrlmining.com";
 
 var irc = "irc.freenode.net/#qrl-pools";
 
-var email = "qrlmining@qrlmining.com";
+var email = "info@qrlmining.com";
 
 var cryptonatorWidget = ["QRL-BTC", "QRL-USD", "QRL-EUR", "QRL-GBP"];
 
