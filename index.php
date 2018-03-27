@@ -23,16 +23,17 @@
       <div class="top-bar-left">
         <ul class="menu">
          <!-- <li class="menu-text"><img src="" alt=""></li> -->
-          <li><a href="index.html">Home</a></li>
+	  <li><a href="index.php">Home</a></li>
           <li><a href="pool.html">Pool</a></li>
 
-          <!-- comming soon 
-          <li><a href="#">Getting Started</a></li>
-          <li><a href="#">FAQ</a></li>
-          <li><a href="#">Pool Blocks</a></li>
-          <li><a href="#0">Payments</a></li>
-        -->
-          <li><a href="pages/Contact.html">Contact Us</a></li>
+       
+          <li><a href="pages/getting_started.html">Getting Started</a></li>
+		  <!--  Not yet
+          <li><a href="">FAQ</a></li>
+		  -->
+          <li><a href="pages/pool_blocks.html">Pool Blocks</a></li>
+          <li><a href="pages/payments.html">Payments</a></li>
+          <li><a href="pages/support.html">Contact Us</a></li>
         </ul>
       </div>
       <div class="top-bar-right">
