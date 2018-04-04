@@ -13,7 +13,7 @@ echo '
 
     <script src="config.js"></script>
     <script src="custom.js"></script>
-    <script src="js/pool.js"></script>
+    <script src="../js/pool.js"></script>
     <link href="custom.css" rel="stylesheet">
 
 
