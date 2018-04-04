@@ -59,7 +59,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index.php"><span id="coinName"></span> Pool</a>
+            <a class="navbar-brand" href="index.php"><span id="coinName"></span> QRL Mining</a>
         </div>
         <div class="collapse navbar-collapse">
             <ul class="nav navbar-nav">
@@ -68,11 +68,11 @@
                     <i class="fa fa-home"></i> Home
                 </a></li>
 				
-				<li class="active"><a class="hot_link" data-page="pool.html" href="#">
+				<li class="active"><a class="hot_link" data-page="pool.html" href="pool.html">
                     <i class="fa fa-home"></i> Pool
                 </a></li>
 
-                <li><a class="hot_link" data-page="getting_started.html" href="#getting_started">
+                <li><a class="hot_link" data-page="getting_started.html" href="pages/getting_started.html">
                     <i class="fa fa-rocket"></i> Getting Started
                 </a></li>
 
