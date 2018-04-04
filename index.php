@@ -88,6 +88,38 @@ if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.ph
       <div class="mining">
         <div id="main-content-section" data-magellan-target="main-content-section">
         <!-- your content goes here -->
+
+
+          <div class="grid-x grid-padding-x">
+            <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+              <div class="container">
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.php"><span id="coinName"></span> Pool</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                  <ul class="nav navbar-nav">
+                    <li class="active"><a class="hot_link" data-page="home.html" href="#"><i class="fa fa-home"></i> Home</a></li>
+                    <li><a class="hot_link" data-page="getting_started.html" href="#getting_started"><i class="fa fa-rocket"></i> Getting Started</a></li>
+                    <li><a class="hot_link" data-page="pool_blocks.html" href="#pool_blocks"><i class="fa fa-cubes"></i> Pool Blocks</a></li>
+                    <li><a class="hot_link" data-page="payments.html" href="#payments"><i class="fa fa-paper-plane-o"></i> Payments</a></li>
+                    <li><a class="hot_link" data-page="support.html" href="#support"><i class="fa fa-comments"></i> Support</a></li>
+                  </ul>
+                <div id="stats_updated">Stats Updated &nbsp;<i class="fa fa-bolt"></i></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div id="page"></div>
+            <p id="loading" class="text-center"><i class="fa fa-circle-o-notch fa-spin"></i></p>
+          </div>
+        </div>
+
           <div class="grid-x grid-padding-x">
           <!-- TimeLine -->
             <div class="small-10 small-offset-1 cell">
