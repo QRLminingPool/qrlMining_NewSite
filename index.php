@@ -191,18 +191,10 @@ if( isset($_GET['removed']) && isset($_GET['email']) ) { include('conf/goodby.ph
       </div>
       
 <!-- footer -->
-<footer class="social-footer">
-  <div class="social-footer-left">
-    <a href="#"><img class="logo" src="assets/qrl_Pool-logo.png"> </a> 
-<br>
-<p>The QRL logo is the sole property of TheQRL</p>
-  </div>
-  
-  <div class="social-footer-icons">
-    <ul class="menu simple">
+<footer class="footer">
+    <ul class="no-bullet">
       <li>&copy; QRLmining 2018</li>
     </ul>
-  </div>
 </footer>
 
       <!-- Sticky Social Bar -->
