@@ -68,23 +68,23 @@
                     <i class="fa fa-home"></i> Home
                 </a></li>
 				
-				<li class="active"><a class="hot_link" data-page="pool.html" href="pool.html">
-                    <i class="fa fa-home"></i> Pool
+				<li><a class="hot_link" data-page="pool.html" href="getting_started.html">
+                    <i class="fa fa-rocket"></i> Pool
                 </a></li>
 
                 <li><a class="hot_link" data-page="getting_started.html" href="pages/getting_started.html">
                     <i class="fa fa-rocket"></i> Getting Started
                 </a></li>
 
-                <li><a class="hot_link" data-page="pool_blocks.html" href="#pool_blocks">
+                <li><a class="hot_link" data-page="pool_blocks.html" href="pages/pool_blocks.html">
                     <i class="fa fa-cubes"></i> Pool Blocks
                 </a></li>
 
-                <li><a class="hot_link" data-page="payments.html" href="#payments">
+                <li><a class="hot_link" data-page="payments.html" href="pages/payments.html">
                     <i class="fa fa-paper-plane-o"></i> Payments
                 </a></li>
 
-                <li><a class="hot_link" data-page="support.html" href="#support">
+                <li><a class="hot_link" data-page="support.html" href="pages/support.html">
                     <i class="fa fa-comments"></i> Support
                 </a></li>
 
