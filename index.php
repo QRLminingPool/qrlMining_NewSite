@@ -7,11 +7,14 @@
     <title>QRL Mining</title>
     <link rel="stylesheet" href="css/foundation.css">
     <link rel="stylesheet" href="css/app.css">
-    <link rel="stylesheet" href="css/qrlmining.css">
     <link rel="stylesheet" href="foundation-icons/foundation-icons.css">
     <link rel="stylesheet" href="webicons/webicons.css">
     <link rel="shortcut icon" type="image/png" href="assets/qrlmininggrey.png"/>
     <link rel="shortcut icon" type="image/png" href="http://qrlmining.fr1t2.com/assets/qrlmininggrey.png"/>
+
+  <?php include('php/Poolscript.php'); ?>
+<link rel="stylesheet" href="css/qrlmining.css">
+
   </head>
   <body>
     <div class="grid-container full">
