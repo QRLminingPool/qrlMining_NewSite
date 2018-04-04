@@ -16,16 +16,20 @@
 <link rel="stylesheet" href="css/qrlmining.css">
 
   </head>
+  
   <body>
+  
     <div class="grid-container full">
       <!-- main site content -->
       <div class="hero-full-screen">
       <!-- topbar -->
-  <div class="top-content-section">
+	  
+
+  <!--<div class="top-content-section">
     <div class="top-bar">
       <div class="top-bar-left">
         <ul class="menu">
-         <!-- <li class="menu-text"><img src="" alt=""></li> -->
+         <!-- <li class="menu-text"><img src="" alt=""></li> 
 	  <li><a href="index.php">Home</a></li>
           <li><a href="pool.html">Pool</a></li>
 
@@ -33,7 +37,7 @@
           <li><a href="pages/getting_started.html">Getting Started</a></li>
 		  <!--  Not yet
           <li><a href="">FAQ</a></li>
-		  -->
+		  
           <li><a href="pages/pool_blocks.html">Pool Blocks</a></li>
           <li><a href="pages/payments.html">Payments</a></li>
           <li><a href="pages/support.html">Contact Us</a></li>
@@ -45,6 +49,54 @@
       </div>
     </div>
   </div>
+-->
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.php"><span id="coinName"></span> Pool</a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav">
+
+                <li class="active"><a class="hot_link" data-page="home.html" href="#">
+                    <i class="fa fa-home"></i> Home
+                </a></li>
+				
+				<li class="active"><a class="hot_link" data-page="pool.html" href="#">
+                    <i class="fa fa-home"></i> Pool
+                </a></li>
+
+                <li><a class="hot_link" data-page="getting_started.html" href="#getting_started">
+                    <i class="fa fa-rocket"></i> Getting Started
+                </a></li>
+
+                <li><a class="hot_link" data-page="pool_blocks.html" href="#pool_blocks">
+                    <i class="fa fa-cubes"></i> Pool Blocks
+                </a></li>
+
+                <li><a class="hot_link" data-page="payments.html" href="#payments">
+                    <i class="fa fa-paper-plane-o"></i> Payments
+                </a></li>
+
+                <li><a class="hot_link" data-page="support.html" href="#support">
+                    <i class="fa fa-comments"></i> Support
+                </a></li>
+
+            </ul>
+            <div id="stats_updated">Stats Updated &nbsp;<i class="fa fa-bolt"></i></div>
+        </div>
+
+    </div>
+</div>
+  
+  
+  
         <div class="middle-content-section">
 
 <?php 
