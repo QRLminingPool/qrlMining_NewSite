@@ -68,7 +68,7 @@
                     <i class="fa fa-home"></i> Home
                 </a></li>
 				
-				<li><a class="hot_link" data-page="pool.html" href="getting_started.html">
+				<li><a class="hot_link" data-page="pool.html" href="pool.html">
                     <i class="fa fa-rocket"></i> Pool
                 </a></li>
 
@@ -76,15 +76,15 @@
                     <i class="fa fa-rocket"></i> Getting Started
                 </a></li>
 
-                <li><a class="hot_link" data-page="pool_blocks.html" href="pages/pool_blocks.html">
+                <li><a class="hot_link" data-page="pool_blocks.html" href="pool.html#pool_blocks">
                     <i class="fa fa-cubes"></i> Pool Blocks
                 </a></li>
 
-                <li><a class="hot_link" data-page="payments.html" href="pages/payments.html">
+                <li><a class="hot_link" data-page="payments.html" href="pool.html#payments">
                     <i class="fa fa-paper-plane-o"></i> Payments
                 </a></li>
 
-                <li><a class="hot_link" data-page="support.html" href="pages/support.html">
+                <li><a class="hot_link" data-page="support.html" href="pool.html#support">
                     <i class="fa fa-comments"></i> Support
                 </a></li>
 
