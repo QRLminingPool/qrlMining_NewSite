@@ -69,7 +69,7 @@
                 </a></li>
 				
 				<li><a class="hot_link" data-page="pool.html" href="pool.html">
-                    <i class="fa fa-rocket"></i> Pool
+                    <i class="fa fa-inbox"></i> Pool
                 </a></li>
 
                 <li><a class="hot_link" data-page="getting_started.html" href="pages/getting_started.html">
