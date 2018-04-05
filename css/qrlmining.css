@@ -3,7 +3,7 @@
 body {
   margin: 0;
   padding: 0;
-  background: #ffffff;
+  background: #d8d8d8;
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: 1.5;
@@ -68,7 +68,7 @@ cite {
     content: "— "; }
 
 .button.gold {
-    background-color: #eaa221;
+    background-color: #ffffff;
     color: #0a0a0a; 
 	font-size: 1.5rem;}
     .button.gold:hover, .button.gold:focus {
