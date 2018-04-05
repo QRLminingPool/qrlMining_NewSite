@@ -218,6 +218,7 @@ cite {
           justify-content: space-between;
   background: url("/assets/shaft.png") center center no-repeat;
   background-size: cover;
+  color: white;
 }
 
 
@@ -678,6 +679,13 @@ color: #d8d8d8;
   right: 1rem;
   font-weight: bold;
 }
+.paymentsStatHolder > span {
+  
+    color: #000;
+}
 
+.blocksStatHolder > span {
+    color: #000;
+}
 
 
