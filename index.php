@@ -74,7 +74,7 @@
             opacity: 0;
             float: right;
             margin-left: 30px;
-            color: #000000;
+            color: #eaa221;
             line-height: 47px;
             font-size: 0.9em;
         }
@@ -82,8 +82,8 @@
         footer{
             position: fixed;
             bottom: 0;
-            width: 100%;
-            background-color: #f5f5f5;
+            width: 95%;
+            background-color: transparent;
         }
 
         footer > div{
@@ -297,6 +297,7 @@
     function updateIndex(){
         updateText('coinName', lastStats.config.coin);
         updateText('poolVersion', lastStats.config.version);
+        
     }
 
     $(function(){
@@ -343,7 +344,8 @@
                 </a></li>
 
             </ul>
-           
+           <div id="stats_updated">Updated &nbsp;<i class="fa fa-bolt"></i></div>
+       
         </div>
 
     </div>
@@ -358,106 +360,44 @@
     </div>
 </div>
 
-
-
-          <div class="grid-x grid-padding-x">
-          <!-- TimeLine -->
-            <div class="small-10 small-offset-1 cell">
-              <div class="timeline">
-                <div class="timeline-item">
-                  <div class="timeline-icon">
-                    <img src="" class="" height="22" width="22" alt="">
-                  </div>
-                  <div class="timeline-content right">
-                    <p class="timeline-content-date">What Is QRL Mining <span class="timeline-content-month"></span></p>
-                    <p>The QRL Mining Pool is a Stratum server mining on the QRL blockchain. QRL uses the Cryptonight mining algorithm to preform hashing functions. This pool combines workers together to allow a greater chance at winning a block</p>
-                  </div>
-                </div>
-                <div class="timeline-item">
-                  <div class="timeline-icon">
-                    <img src="" class="" height="22" width="22" alt="">
-                  </div>
-                  <div class="timeline-content">
-                    <p class="timeline-content-date">QRL (Quantum Resistant Ledger): <span class="timeline-content-month"></span></p>
-                    <p>
-                      <ul class="no-bullet">
-                        <li>Coin Symbol: <strong>QRL</strong></li>
-                        <li>Website: <a href="https://theqrl.org/" target="_blank">https://theqrl.org/</a></li>
-                        <li>Block Explorer: <a href="https://explorer.theqrl.org" target="_blank">Explorer.theQRL.org</a></li>
-                        <li> <a href="https://wallet.theqrl.org" target="_blank">QRL Wallet</a></li>
-                        <li>GitHub: <a href="https://github.com/theQRL" target="_blank">TheQRL</a></li>
-                        <li>Chat: <a href="https://discord.gg/RcR9WzX" target="_blank">Discord</a></li>
-                        <li>Announcment: <a href="https://bitcointalk.org/index.php?topic=1730273.0" target="_blank">Bitcoin Talk</a></li>
-                      </ul>
-                    </p>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-icon">
-                      <img src="" class="" height="22" width="22" alt="">
-                    </div>
-                    <div class="timeline-content right">
-                      <p class="timeline-content-date"><span class="timeline-content-month"></span></p>
-                      <p class="timeline-content-date">Why should I use a pool? <span class="timeline-content-month"></span></p>
-                      <p>Mining is becoming more and more popular by the day and new people are joining everyday.  More importantly, large scale mining enterprises are entering the network with massive hashing power.  This ensures that single miners will very rarely (if ever) win a block.  A mining pool lets smaller miners band together to share their hashrate.  In this way, the pool can win blocks against the big miners and distribute to the pool members based upon their given power.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-icon">
-                      <img src="" class="" height="22" width="22" alt="">
-                    </div>
-                    <div class="timeline-content">
-                      <p class="timeline-content-date">Why did you make a pool? <span class="timeline-content-month"></span></p>
-                      <p>We want the QRL network to succeed.  We think that is best accomplished by having QRL enthusiasts be the backbone of the network and win the appropriate rewards.  We don't want botnets and business enterprises getting everything.  Plain and simple, we want the little guy to get their share as well.</p>
-                    </div>
-                  </div>
-                  <div class="timeline-item">
-                    <div class="timeline-icon">
-                      <img src="" class="" height="22" width="22" alt="">
-                    </div>
-                    <div class="timeline-content right">
-                      <p class="timeline-content-date">Mining seems complicated... <span class="timeline-content-month"></span></p>
-                      <p>Mining software can be a bit complicated but our pool will help with all of that.  Take a look at the site for an array of helpful tutorials on getting your miner going.  If you are still having problems, jump into the <a href="https://discord.gg/ceTcsdv">discord chat</a>and we can walk you through the steps.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- end timeline -->
-            </div>
-        <div class="small-12 cell">
-          <div class="marketing-site-features grey-trans" data-equalizer>
-            <h2 class="marketing-site-features-headline">QRL Mining Pool Features</h2>
-            <hr>
-            <p class="marketing-site-features-subheadline subheader"></p>
-            <div class="grid-x grid-padding-x">
-              <div class="small-12 medium-4 cell" data-equalizer-watch>
-                <i class="fa" aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">First QRL Pool</h4>
-                <p class="marketing-site-features-desc"> While there may be other choices when it comes to pools, this is the <strong>FIRST</strong> QRL pool on the market. We have been mining QRL as a pool since the testnet release of pool software; some of us were even testing during QRL’s alpha phase. Our team was up and running long before that developing strategies and enhancements to reward our community further. Our first mover advantage makes us the most stable and developed pool you are going to get.</p>
-              </div>
-              <div class="small-12 medium-4 cell" data-equalizer-watch>
-                <i class="fa" aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">Community Developed </h4>
-                <p class="marketing-site-features-desc">Founded on community involvement, we believe that we are stronger as a group. The development of this pool will be driven by the involvement and will of our community. We will have a variety of ways for members to vote and push for new enhancements that they care about. We are aiming to be an interactive community that empowers its members to make real changes.</p>
-              </div>
-              <div class="small-12 medium-4 cell" data-equalizer-watch>
-                <i class="fa " aria-hidden="true"></i>
-                <h4 class="marketing-site-features-title">Future Focused</h4>
-                <p class="marketing-site-features-desc"> QRL will hard fork to PoS in Q3 2018 which may impact your decision to invest in equipment. Other pools are solely focused on QRL and will leave you hanging when the network moves to PoS, as they take their profits and leave. Our pool is focused on serving the community and ensuring their investment is maximized. As part of our guiding principles, we will focus on QRL mining in the beginning (we really do believe in the future of this coin) and then implement coin switching mechanisms into our pool. We will also develop tools to track price trends and news of other coins to give members a better understanding of the coin market. That way, when PoS rolls out, our pool will seamlessly transition to a modern, reward maximizing coin pool.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
 <footer>
-    <div class="text-muted">
-     <div id="stats_updated"> Updated &nbsp;<i class="fa fa-bolt"></i></div>
-        Powered by <a target="_blank" href="//github.com/zone117x/node-cryptonote-pool"><i class="fa fa-github"></i> node-cryptonote-pool</a>
-        <span id="poolVersion"></span>
-        created by Matthew Little & open sourced under the <a href="http://www.gnu.org/licenses/gpl-2.0.html">GPL</a>
+    <div class="text-muted grey-trans">
+        
+     Pool Version <span id="poolVersion"></span> 
+      
     </div>
 </footer>
+
+
+<!-- Sticky Social Bar -->
+      <ul class="sticky-social-bar">
+        <li class="social-icon">
+          <a href="https://discord.gg/ceTcsdv">
+            <i class="fa fi-social-discord" aria-hidden="true">
+              <img src="assets/icons/discord-white.png" class="fa">
+            </i>
+            <span class="social-icon-text">Discord</span>
+          </a>
+        </li> 
+        <li class="social-icon">
+          <a href="https://twitter.com/MiningQrl">
+            <i class="fa fi-social-twitter" aria-hidden="true"></i>
+          <span class="social-icon-text">Twitter</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="https://medium.com/@MiningQrl">
+            <i class="fa fi-social-medium" aria-hidden="true"></i>
+            <span class="social-icon-text">Medium</span>
+          </a>
+        </li>
+        <li class="social-icon">
+          <a href="http://www.reddit.com/r/QRL">
+            <i class="fa fi-social-reddit" aria-hidden="true"></i>
+            <span class="social-icon-text">Reddit</span>
+          </a>
+        </li>
+      </ul>
     <script src="js/foundation.equalizer.js"></script>
     <script src="js/foundation.core.js"></script>
     <script src="js/foundation.util.mediaQuery.js"></script>

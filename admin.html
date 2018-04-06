@@ -128,11 +128,49 @@
 
 <div class="container">
 
-    <h3>Admin Center <i id="loading" class="fa fa-circle-o-notch fa-spin"></i></h3>
+    <h2>Admin Center <i id="loading" class="fa fa-circle-o-notch fa-spin"></i></h2>
 
     <hr>
 
     <h4>Stats</h4>
+<div class="table-scroll">
+<table class="hover stack ">
+  <thead>
+    <tr>
+      <th width="200">Pool</th>
+      <th>Stats</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total Owed</td>
+      <td id="totalOwed">...</td>
+    </tr>
+    <tr>
+      <td>Total Paid</td>
+      <td id="totalPaid">...</td>
+    </tr>
+    <tr>
+      <td>Profit (before tx fees)</td>
+      <td id="profit">...</td>
+    </tr>
+    <tr>
+      <td>Average Luck</td>
+      <td id="averageLuck">...</td>
+    </tr>
+    <tr>
+      <td>Orphan Percent</td>
+      <td id="orphanPercent">...</td>
+    </tr>
+    <tr>
+      <td>Registered Addresses</td>
+      <td id="registeredAddresses">...</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
     <dl class="dl-horizontal" id="statsHolder">
         <dt>Total Owed</dt><dd id="totalOwed">...</dd>
         <dt>Total Paid</dt><dd id="totalPaid">...</dd>
@@ -148,6 +186,31 @@
 
     <h4>Miner Lookup</h4>
 
+<ul class="tabs" data-deep-link="true" data-update-history="true" data-deep-link-smudge="true" data-deep-link-smudge="500" data-tabs id="deeplinked-tabs">
+  <li class="tabs-title is-active"><a href="#active" aria-selected="true">Active Miners</a></li>
+  <li class="tabs-title"><a href="#banned">Banned Miners</a></li>
+  <li class="tabs-title"><a href="#unpaid">Unpaid Miners</a></li>
+  <li class="tabs-title"><a href="#paid">Paid Miners</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="deeplinked-tabs">
+  <div class="tabs-panel is-active" id="active">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div class="tabs-panel" id="banned">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+
+  <div class="tabs-panel" id="unpaid">
+    <img class="thumbnail" src="assets/img/generic/rectangle-3.jpg">
+  </div>
+
+  <div class="tabs-panel" id="paid">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+</div>
 
 </div>
 
