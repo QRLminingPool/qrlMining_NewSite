@@ -719,10 +719,11 @@ padding-left:20px !important;
 }
 
 
-@media (min-width: 960px) .spacinglogic{
-margin-left: 10%;
+@media (min-width: 960px) {
+	.spacinglogic{
+	margin-left: 10%;
+	}
 }
-
 .boxtext {
 padding:20px;
 }
