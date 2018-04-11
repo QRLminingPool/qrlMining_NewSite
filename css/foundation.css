@@ -3714,7 +3714,8 @@ a.thumbnail {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-flow: row wrap;
-      flex-flow: row wrap; }
+      flex-flow: row wrap;
+width:100%;	  }
 
 .cell {
   -ms-flex: 0 0 auto;
@@ -3954,8 +3955,7 @@ a.thumbnail {
       width: calc(100% - 1.875rem); } }
 
 .grid-padding-x .grid-padding-x {
-  margin-right: -0.9375rem;
-  margin-left: -0.9375rem; }
+ }
 
 .grid-container:not(.full) > .grid-padding-x {
   margin-right: -0.9375rem;
