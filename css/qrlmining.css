@@ -93,7 +93,7 @@ cite {
 
 .marketing-site-features {
   text-align: center;
-  padding: 20px;
+  padding: 2.25rem 2.25rem;
   color: white;
 }
 
@@ -746,4 +746,14 @@ padding:20px;
 
 .statsbar{
 		padding: 10px !important;
+}
+
+.codescroll{
+	padding: 2px 4px;
+    font-size: 90%;
+    color: #c7254e;
+    background-color: #f9f2f4;
+    white-space: nowrap;
+    border-radius: 4px;
+    overflow: scroll;
 }
