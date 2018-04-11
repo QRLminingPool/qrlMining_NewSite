@@ -54,7 +54,6 @@
             color: #d8d8d8;
         }
         .stats:last-child{
-            width: auto;
         }
         .stats > h3 > i{
             font-size: 0.80em;
