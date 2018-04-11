@@ -719,7 +719,7 @@ padding-left:20px !important;
 }
 
 
-@media (min-width: 960px) {
+@media (min-width: 640px) {
 	.spacinglogic{
 	margin-left: 10%;
 	}
