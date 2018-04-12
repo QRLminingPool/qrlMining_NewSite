@@ -23,35 +23,37 @@
     }
 </style>
 
-<div class="blocksStatHolder">
-    <span class="bg-primary">Total Blocks Mined: <span id="blocksTotal"></span></span>
-    <span class="bg-info">Maturity Depth Requirement: <span id="blocksMaturityCount"></span></span>
-</div>
+<div class="boxedcontent">
+	<div class="blocksStatHolder boxtitle">
+		<span class="bg-primary">Total Blocks Mined: <span id="blocksTotal"></span></span>
+		<span class="bg-info">Maturity Depth Requirement: <span id="blocksMaturityCount"></span></span>
+	</div>
 
-<hr>
+	<hr>
 
-<div class="table-scroll">
-    <table class=" hover stack">
-        <thead>
-        <tr>
-            <th><i class="fa fa-bars"></i> Height</th>
-            <th title="How many more blocks network must mine before this block is matured"><i class="fa fa-link"></i> Maturity</th>
-            <th><i class="fa fa-unlock-alt"></i> Difficulty</th>
-            <th><i class="fa fa-paw"></i> Block Hash</th>
-            <th><i class="fa fa-clock-o"></i> Time Found</th>
-            <th><i class="fa fa-star-half-o"></i> Luck</th>
-        </tr>
-        </thead>
-        <tbody id="blocks_rows">
+	<div class="table-scroll">
+		<table class=" hover stack">
+			<thead>
+			<tr>
+				<th><i class="fa fa-bars"></i> Height</th>
+				<th title="How many more blocks network must mine before this block is matured"><i class="fa fa-link"></i> Maturity</th>
+				<th><i class="fa fa-unlock-alt"></i> Difficulty</th>
+				<th><i class="fa fa-paw"></i> Block Hash</th>
+				<th><i class="fa fa-clock-o"></i> Time Found</th>
+				<th><i class="fa fa-star-half-o"></i> Luck</th>
+			</tr>
+			</thead>
+			<tbody id="blocks_rows">
 
-        </tbody>
-    </table>
-</div>
-
+			</tbody>
+		</table>
+	</div>
 <p class="text-center">
     <button type="button" class="btn btn-default" id="loadMoreBlocks">Load More</button>
 </p>
-
+<br>
+<br>
+</div>
 <script>
 
     currentPage = {
