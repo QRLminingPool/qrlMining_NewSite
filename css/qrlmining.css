@@ -775,27 +775,54 @@ padding:20px;
 	color:#000;
 }
 
-.leftbutton{
-	float: left;
-    width: 47.5%;
-    background-color: #a50b5e;
-    padding: 20px;
-    border-radius: 2px;
-    margin-bottom: 20px;
-    margin-right: 5%;
-	text-align: center;
-	font-size: 2rem !important;
+@media (min-width: 750px) {
+	.leftbutton{
+		float: left;
+		width: 47.5%;
+		background-color: #a50b5e;
+		padding: 20px;
+		border-radius: 2px;
+		margin-bottom: 20px;
+		margin-right: 5%;
+		text-align: center;
+		font-size: 2rem !important;
+	}
+
+	.rightbutton{
+		float: left;
+		width: 47.5%;
+		background-color: #a50b5e;
+		padding: 20px;
+		border-radius: 2px;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 2rem !important;
+	}
 }
 
-.rightbutton{
-	float: left;
-    width: 47.5%;
-    background-color: #a50b5e;
-    padding: 20px;
-    border-radius: 2px;
-    margin-bottom: 20px;
-	text-align: center;
-	font-size: 2rem !important;
+@media (max-width: 750px) {
+	.leftbutton{
+		float: left;
+		width: 100%;
+		background-color: #a50b5e;
+		padding: 20px;
+		border-radius: 2px;
+		margin-bottom: 20px;
+		margin-right: 0%;
+		text-align: center;
+		font-size: 2rem !important;
+	}
+
+	.rightbutton{
+		float: left;
+		width: 100%;
+		background-color: #a50b5e;
+		padding: 20px;
+		border-radius: 2px;
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 2rem !important;
+	}
 }
 
 @media (min-width: 999px) {
