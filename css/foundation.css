@@ -3712,7 +3712,6 @@ a.thumbnail {
 
 .grid-x {
   display: -ms-flexbox;
-  display: flex;
   -ms-flex-flow: row wrap;
       flex-flow: row wrap;
 width:100%;	  }
