@@ -784,6 +784,7 @@ padding:20px;
     margin-bottom: 20px;
     margin-right: 5%;
 	text-align: center;
+	font-size: 2rem !important;
 }
 
 .rightbutton{
@@ -794,10 +795,7 @@ padding:20px;
     border-radius: 2px;
     margin-bottom: 20px;
 	text-align: center;
-}
-
-.2remFont{
-	font-size: 2rem;
+	font-size: 2rem !important;
 }
 
 .leftbuttonquarter{
