@@ -799,3 +799,24 @@ padding:20px;
 .2remFont{
 	font-size: 2rem;
 }
+
+.leftbuttonquarter{
+	float: left;
+    width: 23.125%;
+    background-color: #a50b5e;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+	text-align: center;
+}
+
+.otherbuttonsquarter{
+	float: left;
+    width: 23.125%;
+    background-color: #a50b5e;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+	text-align: center;
+	margin-left: 2.5%;
+}
