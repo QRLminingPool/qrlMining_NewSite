@@ -766,3 +766,7 @@ padding:20px;
 .yourStats{
     color: #000 !important;
 }
+
+.flexDisplay{
+	display:flex;
+	}
