@@ -3358,9 +3358,9 @@ table.hover:not(.unstriped) tr:nth-of-type(even):hover {
   background-color: #ececec; }
 
 .table-scroll {
-  overflow-x: auto; }
+   }
   .table-scroll table {
-    width: auto; }
+ }
 
 .badge {
   display: inline-block;

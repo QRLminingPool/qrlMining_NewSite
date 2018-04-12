@@ -770,3 +770,27 @@ padding:20px;
 .flexDisplay{
 	display:flex;
 	}
+	
+.blackFont{
+	color:#000;
+}
+
+.leftbutton{
+	float: left;
+    width: 47.5%;
+    background-color: #a50b5e;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+    margin-right: 5%;
+}
+}
+
+.rightbutton{
+	    float: left;
+    width: 47.5%;
+    background-color: #a50b5e;
+    padding: 20px;
+    border-radius: 2px;
+    margin-bottom: 20px;
+}
