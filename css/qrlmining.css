@@ -869,3 +869,12 @@ padding:20px;
 		margin-left: 0%;
 	}
 }
+
+.stats .yourStats {
+    color: #FFF !important;
+    margin-left: 2REM;
+}
+
+.stats .table-responsive {
+    margin-left: 0;
+}
