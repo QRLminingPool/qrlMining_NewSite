@@ -91,7 +91,7 @@
 <div class="grid-x grid-padding-x flexDisplay">
     <div class="medium-3 cell stats boxedcontent">
         <div class="boxtitle">
-			<h3>Network</h3>
+			<h3>QRL Network</h3>
 		</div>
 		<div class="paddedtext">
 			<div><i class="fa fa-tachometer"></i> Hash Rate: <span id="networkHashrate"></span></div>
@@ -105,27 +105,62 @@
 
     <div class="medium-3 cell stats boxedcontent spacinglogic">
         <div class="boxtitle">
-			<h3>Our Pool</h3>
+			<h3>QRL Mining</h3>
 		</div>
 		<div class="paddedtext">
 			<div><i class="fa fa-tachometer"></i> Hash Rate: <span id="poolHashrate"></span></div>
 			<div><i class="fa fa-clock-o"></i> Block Found: <span id="poolLastBlockFound"></span></div>
 			<div><i class="fa fa-users"></i> Connected Miners: <span id="poolMiners"></span></div>
-			<div><i class="fa fa-gift"></i> Donations: <span id="poolDonations"></span></div>
 			<div><i class="fa fa-money"></i> Total Pool Fee: <span id="poolFee"></span></div>
 			<div><i class="fa fa-history"></i> Block Found Every: <span id="blockSolvedTime"></span> (est.)</div>
 		</div>
     </div>
 
     <div class="medium-3 cell stats boxedcontent spacinglogic">
-		<h3 id="marketHeader" class="markettitle">Market</h3>
+		<h3 id="marketHeader" class="markettitle">QRL Market</h3>
 		<div class="paddedtext">
 			<div class="marketFooter">Updated: <span id="marketLastUpdated"></span></div>
-			<div class="marketFooter">Powered by <a href="https://www.cryptonator.com/">Cryptonator</a></div>
+			<div class="marketFooter">Powered by <a href="https://www.cryptonator.com/" target="_blank">Cryptonator</a></div>
 		</div>
     </div>
 </div>
 
+<hr>
+<div class="grid-x grid-padding-x">
+<!-- TradingView Widget BEGIN -->
+<div class="tradingview-widget-container">
+  <div class="tradingview-widget-container__widget"></div>
+  <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com" rel="noopener" target="_blank"><span class="blue-text">Quotes</span></a> by TradingView</div>
+  <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+  {
+  "symbols": [
+    {
+      "description": "QRL-BTC",
+      "proName": "BITTREX:QRLBTC"
+    },
+    {
+      "description": "QRL - USD",
+      "proName": "BITTREX:QRLUSD"
+    },
+    {
+      "description": "QRL - ETH",
+      "proName": "BITTREX:QRLETH"
+    },
+    {
+      "description": "BTC - USD",
+      "proName": "COINBASE:BTCUSD"
+    },
+    {
+      "description": "ETH - USD",
+      "proName": "COINBASE:ETHUSD"
+    }
+  ],
+  "locale": "en"
+}
+  </script>
+</div>
+<!-- TradingView Widget END -->
+</div>
 <hr>
 <div class="grid-x grid-padding-x">
 
