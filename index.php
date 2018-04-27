@@ -360,11 +360,7 @@
 </div>
 
 <footer>
-    <div class="text-muted grey-trans">
-        
-     Pool Version <span id="poolVersion"></span> 
-      
-    </div>
+    
 </footer>
 
 
