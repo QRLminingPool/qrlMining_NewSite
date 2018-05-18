@@ -150,6 +150,10 @@
             return '<a target="_blank" href="' + blockchainExplorer + hash + '">' + hash + '</a>';
         }
 
+	function formatBlockHeight(height){
+	    return '<a target="_blank" href="' + blockchainExplorer + height + '">' + height + '</a>';
+	}
+
         var blockStatusClasses = {
             'pending': '',
             'unlocked': 'success',
@@ -164,7 +168,7 @@
         row.className = blockStatusClasses[block.status];
 
         var columns =
-            '<td>' + block.height + '</td>' +
+            '<td>' + formatBlockHeight(block.height) + '</td>' +
             '<td>' + block.maturity + '</td>' +
             '<td>' + block.difficulty + '</td>' +
             '<td>' + formatBlockLink(block.hash) + '</td>' +
