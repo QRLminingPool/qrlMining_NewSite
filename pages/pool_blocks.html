@@ -167,11 +167,12 @@
         row.setAttribute('title', block.status);
         row.className = blockStatusClasses[block.status];
 
+	//Original block hash used formatBlockLink(block.hash) if needed
         var columns =
             '<td>' + formatBlockHeight(block.height) + '</td>' +
             '<td>' + block.maturity + '</td>' +
             '<td>' + block.difficulty + '</td>' +
-            '<td>' + formatBlockLink(block.hash) + '</td>' +
+            '<td>' + block.hash + '</td>' +
             '<td>' + formatDate(block.time) + '</td>' +
             '<td>' + formatLuck(block.difficulty, block.shares) + '</td>';
 
